@@ -45,5 +45,13 @@ architecture Behavioral of Compteur16bits is
 
 begin
 
+process
+
+begin
+    wait until CLK'Event;
+    
+    if(RESET = '0') then Dout<="0";
+    
+end process;
 
 end Behavioral;
